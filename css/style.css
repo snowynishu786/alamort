@@ -219,11 +219,34 @@ section .q1 .card-wrapper .card:hover{
 
 @media screen and (max-width: 576px){
     svg.animated{
-        height: 400px;
+        height: 500px;
     }
     section.q1 .card-wrapper{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+    }
+    #text1, #text2{
+    	font-size: 7rem;
+    }
+    section .q1{
+    	height: 950px;
+    }
+    section .q1 h1.head{
+    	font-size: 4rem;
+    	margin-bottom: 2rem;
+    }
+    section .q1 .card-wrapper{
+    	display: grid;
+    	grid-template-columns: 1fr;
+    }
+    section .q1 .card-wrapper .card{
+    	margin-bottom: 1rem;
+    }
+    .link{
+    	font-size: 3rem;
+    }
+    .img{
+    	width: 50px;
     }
 }
