@@ -1,3 +1,5 @@
+/* STYLING OF home.html */
+
 /* Cool font from Google Fonts! */
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
@@ -47,7 +49,7 @@ body {
 svg.animated{
     background: url(../images/bear.png) left top repeat;
     width: 100%;
-    height: 850px;
+    height: 1000px;
     margin-top: -5rem;
 }
 
@@ -219,7 +221,7 @@ section .q1 .card-wrapper .card:hover{
 
 @media screen and (max-width: 576px){
     svg.animated{
-        height: 500px;
+        height: 400px;
     }
     section.q1 .card-wrapper{
         display: grid;
@@ -227,21 +229,23 @@ section .q1 .card-wrapper .card:hover{
         align-items: center;
     }
     #text1, #text2{
-    	font-size: 7rem;
+    	font-size: 5rem;
     }
     section .q1{
-    	height: 950px;
+    	height: 900px;
     }
     section .q1 h1.head{
     	font-size: 4rem;
     	margin-bottom: 2rem;
+    	margin-top: -2rem;
     }
     section .q1 .card-wrapper{
     	display: grid;
     	grid-template-columns: 1fr;
     }
     section .q1 .card-wrapper .card{
-    	margin-bottom: 1rem;
+    	margin-bottom: 0.1rem;
+    	margin-top: 2rem;
     }
     .link{
     	font-size: 3rem;
@@ -249,4 +253,124 @@ section .q1 .card-wrapper .card:hover{
     .img{
     	width: 50px;
     }
+    nav.navbar-inverse ul.navbar-nav li a{
+    	font-size: 1.5rem;
+    	margin-top: 0.1rem;
+    	margin-bottom: 0.1rem;
+    }
+    nav.navbar-inverse .alamort{
+    	font-size: 3rem;
+    	margin-top: 2rem;
+    }
+}
+
+/* STYLING OF women.html */
+
+section .women{
+    margin-top: 30rem;
+    height: 2600px;
+}
+
+section .women .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* STYLING OF men.html */
+
+section .men{
+    margin-top: 30rem;
+    height: 2600px;
+}
+
+section .men .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* STYLING OF kid.html */
+
+section .kid{
+    margin-top: 30rem;
+    height: 1400px;
+}
+
+section .kid .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* STYLING OF wcloth.html */
+
+section .wcloth{
+    margin-top: 30rem;
+    height: 7700px;
+}
+
+section .wcloth .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section .wcloth .card-wrapper .card{
+    text-align: center;
+    border: 0.5rem solid var(--dark);
+    margin: 4rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+section .wcloth .card-wrapper .card:hover{
+    color: var(--pink);
+    transition: all .3s ease;
+}
+
+section .wcloth h1.head{
+    font-family: cursive;
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 14rem;
+    line-height: 0.5;
+    font-size: 7rem;
+    margin-top: 2rem;
+}
+
+.img1{
+    width: 300px;
+    border-radius: 1rem;
+}
+
+/* STYLING OF mcloth.html */
+
+section .mcloth{
+    margin-top: 30rem;
+    height: 4000px;
+}
+
+section .mcloth .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section .mcloth .card-wrapper .card{
+    text-align: center;
+    border: 0.5rem solid var(--dark);
+    margin: 4rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+section .mcloth .card-wrapper .card:hover{
+    color: var(--pink);
+    transition: all .3s ease;
+}
+
+section .mcloth h1.head{
+    font-family: cursive;
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 14rem;
+    line-height: 0.5;
+    font-size: 7rem;
+    margin-top: 2rem;
 }
