@@ -1,4 +1,4 @@
-/* STYLING OF home.html */
+/* STYLING OF index.html */
 
 /* Cool font from Google Fonts! */
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
@@ -63,9 +63,9 @@ nav.navbar-inverse {
 }
 
 nav.navbar-inverse .alamort{
-    font-size: 4rem;
-    margin: 2rem 0;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin: 1rem 0;
+    margin-bottom: 0rem;
     font-family: 'Dancing Script', cursive;
     color: var(--pink);
 }
@@ -81,9 +81,9 @@ nav.navbar-inverse ul{
 
 nav.navbar-inverse ul.navbar-nav li a{
     color: var(--pink);
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: 0 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 nav.navbar-inverse ul.navbar-nav li a:hover{
@@ -142,7 +142,7 @@ footer .copyright{
 }
 
 footer .footer-socials{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-right: -1rem;
 }
 
@@ -181,7 +181,8 @@ section .q1 .card-wrapper .card{
 
 section .q1 .card-wrapper .card:hover{
     color: var(--pink);
-    border: 1rem solid var(--dark);
+    border: 0.5rem dotted var(--dark);
+    background-color: var(--pink);
 }
 
 .hover-me::before {  
@@ -217,11 +218,11 @@ section .q1 .card-wrapper .card:hover{
 }
 
 .link{
-    font-size: 7rem;
+    font-size: 5rem;
     transition: all .3s ease;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    color: var(--dark);
+    color: var(--blue);
 }
 
 .link:hover{
@@ -231,6 +232,114 @@ section .q1 .card-wrapper .card:hover{
 .q3{
     display: none;
 }
+
+.q2 a h1{
+    color: var(--dark);
+    font-size: 3rem;
+}
+
+.q4 a h1{
+    color: var(--dark);
+    font-size: 3rem;
+}
+
+/* STYLING OF men.html, women.html, kid.html */
+
+section .men, section .women, section .kid{
+    margin-top: 20rem;
+    height: auto;
+}
+
+section .men .card-wrapper, section .women .card-wrapper, section .kid .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* STYLING OF mcloth.html, mwatch.html, mshoes.html, mhats.html, mspecs.html, maccess.html, wcloth.html, wwatch.html, wshoes.html, whats.html, wspecs.html, waccess.html, kcloth.html, kshoes.html, khats.html */
+
+section .cat{
+    margin-top: 30rem;
+    height: auto;
+}
+
+section .cat .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 7rem;
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 6rem;
+    margin: 6rem;
+}
+
+section .cat .card-wrapper .card{
+    text-align: center;
+    margin: 0.2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+section .cat .card-wrapper .card1{
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    padding: 0rem;
+}
+
+section .cat .card-wrapper .card2{
+    text-align: center;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 0rem;
+}
+
+section .cat .card-wrapper .card:hover{
+    color: var(--pink);
+    transition: all .4s ease;
+    background-color: var(--blue);
+    transform: rotate(-10deg);
+}
+
+section .cat .card-wrapper .card1:hover{
+    color: var(--pink);
+    transition: all .4s ease;
+    background-color: var(--purple);
+    transform: rotate(-10deg);
+}
+
+section .cat .card-wrapper .card2:hover{
+    color: var(--pink);
+    transition: all .4s ease;
+    background-color: var(--dark);
+    transform: rotate(20deg);
+}
+
+section .cat h1.head{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 14rem;
+    line-height: 0.5;
+    font-size: 7rem;
+    margin-top: 2rem;
+}
+
+.img1{
+    width: 250px;
+    border-radius: 1rem;
+}
+
+.price{
+    font-size: 2.5rem;
+    color: var(--dark);
+}
+
+.price:hover{
+    color: var(--green);
+    transition: all .3s ease;
+}
+
+/* Media Query */
 
 @media screen and (max-width: 576px){
     svg.animated{
@@ -284,290 +393,187 @@ section .q1 .card-wrapper .card:hover{
     .q3{
         display: grid;
     }
+    section .cat{
+        margin-top: 15rem;
+        height: auto;
+    }
+    section .cat .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+    section .cat .card-wrapper .card1{
+        margin: 0rem;
+    }
+    section .cat .card-wrapper .card2{
+        margin: 0rem;
+    }
+    section .cat .card-wrapper .card1:hover{
+        color: none;
+        transition: none;
+        background-color: var(--pink);
+        transform: rotate(0deg);
+    }
+    section .cat .card-wrapper .card2:hover{
+        color: var(--pink);
+        transition: all .4s ease;
+        background-color: var(--pink);
+        transform: rotate(0deg);
+    }
+    section .cat .card-wrapper .card{
+        text-align: center;
+        border: 0.2rem solid var(--dark);
+        margin: 4rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: block;
+    }
+    section .cat .card-wrapper .card:hover{
+        color: var(--pink);
+        transition: all .3s ease;
+        background-color: var(--dark);
+        transform: rotate(0deg);
+    }
+    section .cat h1.head{
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        color: var(--dark);
+        margin-bottom: 14rem;
+        line-height: 0.5;
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    .img1{
+        width: 100px;
+        border-radius: 1rem;
+    }
+    .img1:hover{
+        width: 150px;
+        transition: all .3s ease;
+    }
+    .price{
+        color: var(--blue);
+        font-size: 1.5rem;
+    }
+    section .men, section .women, section .kid{
+        margin-top: 15rem;
+        height: auto;
+    }
+    section .men .card-wrapper, section .women .card-wrapper, section .kid .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section .men .card-wrapper .card:hover, section .women .card-wrapper .card:hover, section .kid .card-wrapper .card:hover{
+        border: 0.2rem dashed var(--dark);
+    }
 }
 
-/* STYLING OF women.html */
+/* STYLING OF sales.html */
 
-section .women{
-    margin-top: 30rem;
-    height: 2600px;
+.sales{
+    background-color: var(--dark);
+    margin-top: 6rem;
+    width: 100%;
+    height: 400px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 80% 100%, 70% 90%, 60% 100%, 50% 90%, 40% 100%, 30% 90%, 20% 100%, 10% 90%, 0 100%);
 }
 
-section .women .card-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-/* STYLING OF men.html */
-
-section .men{
-    margin-top: 30rem;
-    height: 2600px;
-}
-
-section .men .card-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-/* STYLING OF kid.html */
-
-section .kid{
-    margin-top: 30rem;
-    height: 1400px;
-}
-
-section .kid .card-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-/* STYLING OF wcloth.html */
-
-section .wcloth{
-    margin-top: 30rem;
-    height: 7700px;
-}
-
-section .wcloth .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section .wcloth .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-section .wcloth .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
-}
-
-section .wcloth h1.head{
+.sales h1{
     font-family: 'Dancing Script', cursive;
     text-align: center;
-    color: var(--dark);
+    color: var(--pink);
     margin-bottom: 14rem;
     line-height: 0.5;
     font-size: 7rem;
-    margin-top: 2rem;
+    margin-left: 4%;
 }
 
-.img1{
-    width: 300px;
+.sale1{
+    height: 500px;
+    margin-top: 7rem;
+}
+
+.sale1 .image1 img{
+    height: 400px;
+    margin-top: -48rem;
+    margin-left: 30%;
+    border-radius: 2rem;
+}
+
+.sale1 .image1 img:hover{
+    height: 450px;
+    transition: all .4s ease;
+}
+
+.sale1 .clip1{
+    margin-top: 25rem;
+}
+
+.sale1 .clip2{
+    margin-top: -12rem;
+    margin-left: 64.95%;
+}
+
+.sale1 .image2 img{
+    height: 400px;
+    margin-top: -48rem;
+    margin-left: 52%;
+    border-radius: 2rem;
+}
+
+.sale1 .image2 img:hover{
+    height: 450px;
+    transition: all .4s ease;
+}
+
+.d1 svg, .d2 svg, .d3 svg, .d4 svg, .d5 svg, .d6 svg, .d7 svg, .d8 svg, .d9 svg, .d10 svg, .d11 svg, .d12 svg, .d13 svg, .d14 svg, .d15 svg, .d16 svg, .d17 svg, .d18 svg, .d19 svg, .d20 svg{
+    z-index: 999;
+    position: fixed;
+    background-color: var(--purple);
     border-radius: 1rem;
 }
 
-/* STYLING OF mcloth.html */
-
-section .mcloth{
-    margin-top: 30rem;
-    height: 4000px;
+.d1{
+    margin-top: -20%;
 }
 
-section .mcloth .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.d2, .d4, .d6{
+    margin-left: 10%;
+    margin-top: 3%;
 }
 
-section .mcloth .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
+.d3, .d5, .d7{
+    margin-top: 3%;
 }
 
-section .mcloth .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
+.d8{
+    margin-left: 20%;
+    margin-top: -28%;
 }
 
-section .mcloth h1.head{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: var(--dark);
-    margin-bottom: 14rem;
-    line-height: 0.5;
-    font-size: 7rem;
-    margin-top: 2rem;
+.d9, .d11, .d13{
+    margin-left: 30%;
+    margin-top: 3%;
 }
 
-/* STYLING OF kcloth.html */
-
-section .kcloth{
-    margin-top: 30rem;
-    height: 5300px;
+.d10, .d12, .d14{
+    margin-left: 20%;
+    margin-top: 3%;
 }
 
-section .kcloth .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.d15{
+    margin-left: 40%;
+    margin-top: -28%;
 }
 
-section .kcloth .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
+.d16{
+    margin-left: 40%;
+    margin-top: 7.5%;
 }
 
-section .kcloth .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
-}
-
-section .kcloth h1.head{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: var(--dark);
-    margin-bottom: 14rem;
-    line-height: 0.5;
-    font-size: 7rem;
-    margin-top: 2rem;
-}
-
-/* STYLING OF wwatch.html */
-
-section .wwatch{
-    margin-top: 30rem;
-    height: 5300px;
-}
-
-section .wwatch .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section .wwatch .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-section .wwatch .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
-}
-
-section .wwatch h1.head{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: var(--dark);
-    margin-bottom: 14rem;
-    line-height: 0.5;
-    font-size: 7rem;
-    margin-top: 2rem;
-}
-
-/* STYLING OF mwatch.html */
-
-section .mwatch{
-    margin-top: 30rem;
-    height: 5550px;
-}
-
-section .mwatch .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section .mwatch .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-section .mwatch .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
-}
-
-section .mwatch h1.head{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: var(--dark);
-    margin-bottom: 14rem;
-    line-height: 0.5;
-    font-size: 7rem;
-    margin-top: 2rem;
-}
-
-/* STYLING OF kshoes.html */
-
-section .kshoes{
-    margin-top: 30rem;
-    height: 5350px;
-}
-
-section .kshoes .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section .kshoes .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-section .kshoes .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
-}
-
-section .kshoes h1.head{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: var(--dark);
-    margin-bottom: 14rem;
-    line-height: 0.5;
-    font-size: 7rem;
-    margin-top: 2rem;
-}
-
-/* STYLING OF khats.html */
-
-section .khats{
-    margin-top: 30rem;
-    height: 5450px;
-}
-
-section .khats .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section .khats .card-wrapper .card{
-    text-align: center;
-    border: 0.5rem solid var(--dark);
-    margin: 4rem;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-section .khats .card-wrapper .card:hover{
-    color: var(--pink);
-    transition: all .3s ease;
-}
-
-section .khats h1.head{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: var(--dark);
-    margin-bottom: 14rem;
-    line-height: 0.5;
-    font-size: 7rem;
-    margin-top: 2rem;
+.d17, .d18{
+    margin-left: 40%;
+    margin-top: 7.5%;
 }
